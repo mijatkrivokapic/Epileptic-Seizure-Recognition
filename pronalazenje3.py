@@ -136,14 +136,14 @@ for order in ar_params_split:
     current_result=find_best_svc_params(order['x_train'],order['y_train'],f"ar_{i}_gs_result.pkl",False)
     ar_gs_results.append(current_result)
 
-    print(f"Autoregresivni model {i}. reda:")
+    """ print(f"Autoregresivni model {i}. reda:")
     svc=SVC()
     svc.fit(order['x_train'],order['y_train'])
     y_pred=svc.predict(order['x_test'])
     print(f"Rezultati nad test podacima sa podrazumevanim parametrima: {f1_score(order['y_test'],y_pred)}")
 
     print(f"Pronađeni parametri: {current_result.best_params_}")
-    print(f"Rezultati nad test podacima sa pronađenim parametrima {current_result.score(order['x_test'],order['y_test'])}")
+    print(f"Rezultati nad test podacima sa pronađenim parametrima {current_result.score(order['x_test'],order['y_test'])}") """
  
     i+=1
 
