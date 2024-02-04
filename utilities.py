@@ -43,7 +43,7 @@ def find_best_svc_params(x_train,y_train,filename,load_from_file):
             grid_search = pickle.load(f)
         return grid_search
 
-    c = [0.01, 0.1, 1.0, 10.0, 100.0]
+    c = [0.01, 0.1, 1.0, 10.0, 90, 100.0, 110]
     gamma = [0.001, 0.001, 0.01, 0.1, 1]
     degree = [2,3,4]
     param_grid=[{'C': c,'kernel': ['linear']},
